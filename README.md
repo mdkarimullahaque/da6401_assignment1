@@ -4,28 +4,14 @@ MD Karimulla Haque MA23C021
 
 Instructions to train and evaluate the neural network models:
 
-To train a neural network model for image classification on the Fashion-MNIST dataset using categorical cross-entropy loss, import feed_forward_neural_network.py, and use feed_forward_neural_network.Feed_Forward_Neural_Network with any configuration to create the neural network.
+To train a neural network model for image classification on the Fashion-MNIST dataset using categorical cross-entropy loss, import network.py, and use NeuralNetwork with any configuration to create the neural network.
 To train a neural network model:
 
-use feed_forward_neural_network.Feed_Forward_Neural_Network.{optimizer}
+use NeuralNetwork.{optimizer}
 optimizer: optimization routine 
- (stochastic_gradient_descent, momentum_gradient_descent, nesterov_accelerated_gradient_descent, rmsprop, sdam, nadam)
-
-
-main.py: creates the sweep and randomly searches for best hyperparameter, it runs for 200 counts maximum.
-
-1. To upload the example images from each class and the confusion matrices given as images Example_Image.png and Confusion_Matrix.png in this repository, run the file titled: confusion_matrix_and_Quest_1.py.
-
-8. To train the model on Squared Error loss: run the file titled: train_for_squared error.py
-
-10. To train the model on MNIST dataset: run the file titled: train_for_mnist.py
-
-
+ (Normal, Momentum, Nesterov, AdaGrad, RMSProp, Adam, Nadam)
 
 Link to the project report: https://api.wandb.ai/links/mdkarimullahaque-iit-madras/amny3btr
-
-
-
 
 
 The NN training framework:
@@ -52,6 +38,3 @@ To train the NN, it takes the training data, the validation data and the hyperpa
 
 The function model_evaluation() takes x_test and y_test, and return test accuracy, test loss, y_test, y_pred.
 
-
-
-Note: Wherever you need to log to wandb, please remember to change the name of the entity and project in the corresponding line of code.
